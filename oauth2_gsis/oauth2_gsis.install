@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Installation file for the OAuth2 Authentication module.
+ */
+
+
+/**
+ * Implements hook_install().
+ */
+/*
+function oauth2_gsis_install() {
+  $roles = array('GSIS_USER');
+
+  foreach($roles as $name) {
+     $existing_role = user_role_load_by_name($name); //get role if exists
+
+     if (empty($existing_role)){ //Check if role exists
+        $role = new stdClass();
+         $role->name = $name;
+         user_role_save($role);
+      }
+  }
+}
+*/
+/**
+ * Implements hook_uninstall().
+ */
+function oauth2_gsis_uninstall() {
+
+  /*
+  // Delete the configuration.
+  variable_del('oauth2_gsis_token_endpoint');
+  variable_del('oauth2_gsis_client_id');
+  variable_del('oauth2_gsis_client_secret');
+  variable_del('oauth2_gsis_scope');
+  variable_del('oauth2_gsis_class');
+  variable_del('oauth2_gsis_user_edit_email');
+  variable_del('oauth2_gsis_user_edit_password');
+  */
+}
